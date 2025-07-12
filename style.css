@@ -1,0 +1,125 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    user-select: none;
+}
+
+body{
+    background: linear-gradient(to left,rgb(200, 99, 99),rgb(220, 173, 173),rgb(233, 203, 166),antiquewhite);
+}
+
+#chess_main_box{
+    /* background-color: aqua; */
+    display: grid;
+    height: 680px;
+    width: 680px;
+    grid-template-columns: repeat(10%,8);
+    grid-template-rows: repeat(10%,8);
+    box-shadow: 5px 5px 20px 5px rgb(138, 137, 137);
+}
+
+.chess_black_box{
+    background-color: rgb(200, 99, 99);
+}
+.chess_white_box{
+    background-color: antiquewhite;
+}
+
+.chess_inner_box{
+    font-size: 50px;
+    height: 85px;
+    width: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+#gameOver{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: aliceblue;
+    padding: 15px;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px 1px;
+    user-select: none;
+    display: none;
+}
+
+/* #idicator_container{
+    position: absolute;
+    height: 30px;
+    width: 100vW;
+} */
+
+#indicator{
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    height: 5vw;
+    width: 5vw;
+    max-width: 30px;
+    max-height: 30px;
+    background-color: green;
+    border-radius: 50%;
+}
+
+#rotate_me{
+    margin: auto;
+    height: 680px;
+    width: 680px;
+}
+
+@media only screen and (max-width :1000px){
+    #idicator_container{
+        position: relative;
+    }
+}
+
+@media only screen and (max-width :800px){
+
+    #rotate_me{
+        height: 80vw;
+        width: 80vw;
+        min-width: 240px;
+        min-height: 240px;
+    }
+    #chess_main_box{
+        height: 80vw;
+        width: 80vw;
+        min-width: 240px;
+        min-height: 240px;
+    }
+
+    .chess_inner_box{
+        font-size: 300%;
+        height: 10vw;
+        width: 10vw;
+        min-width: 30px;
+        min-height: 30px;
+    }
+
+
+}
+
+@media only screen and (max-width:600px){
+    .chess_inner_box{
+        font-size: 200%;
+    }
+}
+
+@media only screen and (max-width:350px){
+    .chess_inner_box{
+        font-size: 150%;
+    }
+
+    #gameOver{
+        font-size: 100%;
+    }
+}
