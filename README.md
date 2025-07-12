@@ -37,5 +37,7 @@ A modern **Chess game** built using **HTML, CSS, JavaScript, and Firebase**, all
 - **HTML, CSS, JavaScript** — for frontend and game logic
 - **Firebase** — for real-time online multiplayer functionality
 
-## URL
-https://play-chess.great-site.net
+---
+## 🌐 Live Demo
+
+[👉 Play Online Here](https://play-chess.great-site.net)
